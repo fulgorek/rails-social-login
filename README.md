@@ -3,15 +3,15 @@ Requirements: Facebook, Twitter and Linkedin App tokens:
 Environment variables:
 
   - Facebook
-    - ENV["FACEBOOK_KEY"]
-    - ENV["FACEBOOK_SECRET"]
+    - ```ENV["FACEBOOK_KEY"]```
+    - ```ENV["FACEBOOK_SECRET"]```
   - Twitter
-    - ENV["TWITTER_SECRET"]
-    - ENV["TWITTER_KEY"]
+    - ```ENV["TWITTER_SECRET"]```
+    - ```ENV["TWITTER_KEY"]```
 
   - Linkedin
-    - ENV["LINKEDIN_KEY"]
-    - ENV["LINKEDIN_SECRET"]
+    - ```ENV["LINKEDIN_KEY"]```
+    - ```ENV["LINKEDIN_SECRET"]```
 
 
 ###Resolve dependencies
