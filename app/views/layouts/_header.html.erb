@@ -1,0 +1,22 @@
+<div class="page-header">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+        <% if user_signed_in? %>
+        <li class="disabled">
+            <a style="cursor:default">
+                <b>Logged in as <%=  admin? ? 'Administrador' : current_user['name']%></b>
+            </a>
+        </li>
+        <li class="<%= active_class('/connections') %>"><%= link_to 'My Connections', connections_path %></li>
+        <% if admin? %>
+            <li class="<%= active_class('/connections/list') %>"><%= link_to 'Users', connections_list_path %></li>
+        <% end %>
+        <li class="<%= active_class('/logout') %>"><%= link_to 'logout', logout_path %></li>
+        <% else %>
+        <li class="<%= active_class('/', '/users') %>"><%= link_to 'Home', root_path %></li>
+        <li class="<%= active_class('/login') %>"><%= link_to 'Login', login_path %></li>
+    <% end %>
+    </ul>
+    <h3 class="text-muted">Social</h3>
+  </div>
+</div>
